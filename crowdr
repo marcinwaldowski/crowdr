@@ -14,7 +14,7 @@ if [[ -n "$CROWDR_DRY" ]]; then
     DOCKER_BIN='echo docker'
     HOOK_EXEC='cat'
 else
-    DOCKER_BIN=$(command -v docker)
+    DOCKER_BIN=docker
     HOOK_EXEC='source'
 fi
 declare -A opts_run
